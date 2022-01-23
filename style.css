@@ -203,13 +203,13 @@ section .contentBxs .formBx .btnd:hover {
 
   section .contentBxs .formBx h1 {
     font-weight: 900;
-    font-size: 70px;
+    font-size: 50px;
     animation: contentsec2 linear 1s;
   }
 
   section .contentBxs .formBx h2 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
     color: #099c9c;
     animation: contentsec2 linear 1s;
   }
