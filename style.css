@@ -214,3 +214,43 @@ section .contentBxs .formBx .btnd:hover {
     animation: contentsec2 linear 1s;
   }
 }
+
+@media (max-width: 1024px) {
+  section .imgBxs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .contentBxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+
+  section .contentBxs .formBx {
+    width: 100%;
+    padding: 40px;
+    background: rgba(78, 78, 78, 0.8);
+    opacity: 0.97;
+    margin: 50px;
+  }
+
+  section .contentBxs .formBx h1 {
+    font-weight: 900;
+    font-size: 80px;
+    animation: contentsec2 linear 1s;
+  }
+
+  section .contentBxs .formBx h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #099c9c;
+    animation: contentsec2 linear 1s;
+  }
+}
