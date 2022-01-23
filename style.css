@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  --primary-blue: #0b4870;
+  --secondary-yellow: #ffbe55;
+}
+
+body {
+  background-image: url(maxresdefault.jpg);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-title {
+  font-size: 100px;
+  font-weight: 900;
+  color: #099c9c;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+section .imgBxs {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-right: 4px solid rgb(248, 248, 248);
+  animation: contentsec linear 1s;
+}
+
+section .imgBxs img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  z-index: 22;
+}
+
+section .contentBxs {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section .contentBxs .formBx {
+  color: #eee;
+  margin: 20px;
+}
+
+section .contentBxs .formBx h1 {
+  font-weight: 900;
+  font-size: 100px;
+  animation: contentsec2 linear 1s;
+}
+section .contentBxs .formBx h2 {
+  font-weight: 700;
+  font-size: 80px;
+  color: #099c9c;
+  animation: contentsec2 linear 1s;
+}
+
+section .contentBxs .formBx p {
+  animation: contentsec3 linear 1s;
+}
+
+section .contentBxs .formBx a {
+  text-decoration: none;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 10px;
+  margin: 0 5px;
+  color: #099c9c;
+  animation: contentsec3 linear 1s;
+  font-size: 20px;
+  font-weight: 600;
+  outline: #000;
+}
+
+section .contentBxs .formBx .forgotlink {
+  cursor: pointer;
+}
+
+section .contentBxs .formBx .btn-group {
+  animation: contentsec linear 1s;
+}
+
+section .contentBxs .formBx .ordiv {
+  animation: contentsec linear 1s;
+}
+
+section .contentBxs .formBx .btnd {
+  background-color: var(--secondary-yellow);
+  color: var(--primary-blue);
+}
+
+section .contentBxs .formBx .btnd:hover {
+  background-color: var(--primary-blue);
+  color: var(--secondary-yellow);
+}
+
+/* Wave */
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave .shape-fill {
+  fill: #0b4870;
+}
+
+@keyframes scaler {
+  0% {
+    transform: opacity(0);
+  }
+  100% {
+    transform: opacity(1);
+  }
+}
+
+@keyframes contentsec {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes contentsec2 {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes contentsec3 {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* mediaquery */
+
+@media (max-width: 768px) {
+  section .imgBxs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .contentBxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+
+  section .contentBxs .formBx {
+    width: 100%;
+    padding: 40px;
+    background: rgba(78, 78, 78, 0.8);
+    opacity: 0.97;
+    margin: 50px;
+  }
+
+  section .contentBxs .formBx h1 {
+    font-weight: 900;
+    font-size: 80px;
+    animation: contentsec2 linear 1s;
+  }
+
+  section .contentBxs .formBx h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #099c9c;
+    animation: contentsec2 linear 1s;
+  }
+}
